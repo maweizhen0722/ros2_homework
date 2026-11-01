@@ -1,0 +1,6 @@
+Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maweizhen/ros2_ws/src/my_homework -DCMAKE_INSTALL_PREFIX=/home/maweizhen/ros2_ws/install/my_homework
+Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maweizhen/ros2_ws/src/my_homework -DCMAKE_INSTALL_PREFIX=/home/maweizhen/ros2_ws/install/my_homework
+Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maweizhen/ros2_ws/build/my_homework -- -j4 -l4
+Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maweizhen/ros2_ws/build/my_homework -- -j4 -l4
+Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maweizhen/ros2_ws/build/my_homework
+Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maweizhen/ros2_ws/build/my_homework

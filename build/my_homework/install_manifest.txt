@@ -1,0 +1,17 @@
+/home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/package_run_dependencies/my_homework
+/home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/parent_prefix_path/my_homework
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/ament_prefix_path.sh
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/ament_prefix_path.dsv
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/path.sh
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/path.dsv
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.bash
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.sh
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.zsh
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.dsv
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/package.dsv
+/home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/packages/my_homework
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/cmake/my_homeworkConfig.cmake
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/cmake/my_homeworkConfig-version.cmake
+/home/maweizhen/ros2_ws/install/my_homework/share/my_homework/package.xml
+/home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/publisher
+/home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/subscriber

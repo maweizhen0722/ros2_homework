@@ -1,0 +1,11 @@
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/uninstall.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/my_homework_uninstall.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/publisher.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/subscriber.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/test.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/edit_cache.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/rebuild_cache.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/list_install_components.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/install.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/install/local.dir
+/home/maweizhen/ros2_ws/build/my_homework/CMakeFiles/install/strip.dir

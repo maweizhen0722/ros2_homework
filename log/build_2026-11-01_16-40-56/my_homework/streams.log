@@ -1,0 +1,73 @@
+[0.014s] Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maweizhen/ros2_ws/src/my_homework -DCMAKE_INSTALL_PREFIX=/home/maweizhen/ros2_ws/install/my_homework
+[0.191s] -- The C compiler identification is GNU 11.4.0
+[0.344s] -- The CXX compiler identification is GNU 11.4.0
+[0.354s] -- Detecting C compiler ABI info
+[0.423s] -- Detecting C compiler ABI info - done
+[0.427s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.428s] -- Detecting C compile features
+[0.429s] -- Detecting C compile features - done
+[0.432s] -- Detecting CXX compiler ABI info
+[0.500s] -- Detecting CXX compiler ABI info - done
+[0.504s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.504s] -- Detecting CXX compile features
+[0.504s] -- Detecting CXX compile features - done
+[0.508s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.608s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.698s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.748s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.753s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.764s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.798s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.850s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.853s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.936s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.953s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.975s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.987s] -- Looking for pthread.h
+[1.059s] -- Looking for pthread.h - found
+[1.060s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.114s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.115s] -- Found Threads: TRUE  
+[1.173s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.238s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.238s] -- Configured cppcheck include dirs: 
+[1.238s] -- Configured cppcheck exclude dirs and/or files: 
+[1.239s] -- Added test 'lint_cmake' to check CMake code style
+[1.240s] -- Added test 'uncrustify' to check C / C++ code style
+[1.240s] -- Configured uncrustify additional arguments: 
+[1.241s] -- Added test 'xmllint' to check XML markup files
+[1.243s] -- Configuring done
+[1.250s] -- Generating done
+[1.253s] -- Build files have been written to: /home/maweizhen/ros2_ws/build/my_homework
+[1.259s] Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/maweizhen/ros2_ws/src/my_homework -DCMAKE_INSTALL_PREFIX=/home/maweizhen/ros2_ws/install/my_homework
+[1.259s] Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maweizhen/ros2_ws/build/my_homework -- -j4 -l4
+[1.291s] [ 25%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher.cpp.o[0m
+[1.291s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/subscriber.cpp.o[0m
+[4.813s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[4.968s] [ 75%] Built target publisher
+[6.819s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[7.017s] [100%] Built target subscriber
+[7.024s] Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/maweizhen/ros2_ws/build/my_homework -- -j4 -l4
+[7.030s] Invoking command in '/home/maweizhen/ros2_ws/build/my_homework': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maweizhen/ros2_ws/build/my_homework
+[7.035s] -- Install configuration: ""
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/package_run_dependencies/my_homework
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/parent_prefix_path/my_homework
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/ament_prefix_path.sh
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/ament_prefix_path.dsv
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/path.sh
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/environment/path.dsv
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.bash
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.sh
+[7.035s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.zsh
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/local_setup.dsv
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/package.dsv
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/ament_index/resource_index/packages/my_homework
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/cmake/my_homeworkConfig.cmake
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/cmake/my_homeworkConfig-version.cmake
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/share/my_homework/package.xml
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/publisher
+[7.036s] -- Set runtime path of "/home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/publisher" to ""
+[7.036s] -- Installing: /home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/subscriber
+[7.039s] -- Set runtime path of "/home/maweizhen/ros2_ws/install/my_homework/lib/my_homework/subscriber" to ""
+[7.039s] Invoked command in '/home/maweizhen/ros2_ws/build/my_homework' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/maweizhen/ros2_ws/build/my_homework
