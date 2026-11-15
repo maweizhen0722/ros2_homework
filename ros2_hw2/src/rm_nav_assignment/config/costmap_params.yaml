@@ -1,0 +1,63 @@
+# Nav2 官方 costmap 配置（按第三次课课件的参数整理，已修正课件里的拼写）
+# 用途：如果学长要求"用 nav2_costmap_2d 跑起 costmap"，就把这份文件喂给 Nav2 节点。
+# 我们的作业节点默认自己加载 pgm 并发布 /global_costmap/costmap，
+# 效果与这里的 static_layer + inflation_layer 一致，且不依赖 lifecycle，最容易跑通。
+global_costmap:
+  ros__parameters:
+    global_frame: map
+    robot_base_frame: base_link
+    update_frequency: 1.0
+    publish_frequency: 1.0
+    resolution: 0.02
+    robot_radius: 0.1                  # 机器人外接圆半径(米)
+    rolling_window: false             # 不跟随机器人移动
+    always_send_full_costmap: true
+    plugins: ["static_layer", "inflation_layer", "obstacle_layer"]
+    # 注：课件里 voxel_layer 与 obstacle_layer 同时开着会重复处理同一批点云，
+    # 只用 2D LaserScan 时保留 obstacle_layer 即可；换成 3D 点云再改成 voxel_layer。
+
+    static_layer:
+      plugin: "nav2_costmap_2d::StaticLayer"
+      map_subscribe_transient_local: true   # 为后启动的节点保留地图消息
+
+    inflation_layer:
+      plugin: "nav2_costmap_2d::InflationLayer"
+      inflation_radius: 0.5                 # 一般不小于 robot_radius
+      cost_scaling_factor: 3.0              # 2.0~5.0，控制膨胀代价衰减快慢
+
+    obstacle_layer:
+      plugin: "nav2_costmap_2d::ObstacleLayer"
+      enabled: true
+      max_obstacle_height: 0.80
+      min_obstacle_height: 0.00            # 课件写作 min_obstable_height，这里已修正
+      observation_sources: scan
+      scan:
+        topic: /scan
+        data_type: "LaserScan"
+        marking: true                      # 添加新障碍
+        clearing: true                     # 清除过时障碍
+        obstacle_max_range: 5.0
+        obstacle_min_range: 0.1
+
+    # --- 3D 点云时换成这个（对应课件 voxel_layer 部分）---
+    # voxel_layer:
+    #   plugin: "nav2_costmap_2d::VoxelLayer"
+    #   enabled: true
+    #   origin_z: 0.0
+    #   z_resolution: 0.05
+    #   z_voxels: 16
+    #   max_obstacle_height: 0.80
+    #   min_obstacle_height: 0.00
+    #   mark_threshold: 0
+    #   unknown_threshold: 16
+    #   observation_sources: scan
+    #   scan:
+    #     topic: /scan
+    #     data_type: "PointCloud2"
+    #     marking: true
+    #     clearing: true
+
+map_server:
+  ros__parameters:
+    # 改成你自己机器上的绝对路径
+    yaml_filename: "/home/rm/ros2_ws/src/rm_nav_assignment/map/mymap.yaml"

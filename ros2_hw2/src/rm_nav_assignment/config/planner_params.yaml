@@ -1,0 +1,24 @@
+# 规划节点参数（C++ 版）
+# 节点名 rm_nav_planner，见 launch/homework.launch.py
+rm_nav_planner:
+  ros__parameters:
+    frame_id: map
+    goal_topic: /goal_pose              # RVIZ 的 "2D Goal Pose" 按钮发出的消息
+    path_topic: /planned_path           # 我们发布的 nav_msgs/Path
+    costmap_topic: /global_costmap/costmap
+    map_topic: /map
+    map_file: ""                        # launch 里会填入包内 mymap.pgm 的绝对路径
+
+    # 地图 yaml 里的信息（mymap.yaml）
+    map_resolution: 0.02
+    map_origin_x: -8.54
+    map_origin_y: -10.04
+    map_occupied_thresh: 0.65
+    map_free_thresh: 0.196
+
+    # 默认起点：没有真实机器人时用 RVIZ 的 "2D Pose Estimate" 覆盖它
+    start_x: 1.47
+    start_y: 0.97
+
+    safety_cells: 4                     # 障碍膨胀 4 格 = 8 cm
+    allow_unknown: false                # 灰色未知区域默认不走

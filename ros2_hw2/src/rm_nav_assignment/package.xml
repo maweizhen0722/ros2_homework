@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>rm_nav_assignment</name>
+  <version>1.0.0</version>
+  <description>RoboMaster 导航组第三次课作业：加载 costmap，在 RVIZ 点击目标点规划最短路径并发布 nav_msgs/Path</description>
+  <maintainer email="student@example.com">rm_nav_student</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- 学长要求安装的库 / 可选用 Nav2 官方链路时用到 -->
+  <exec_depend>nav2_costmap_2d</exec_depend>
+  <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>nav2_lifecycle_manager</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
